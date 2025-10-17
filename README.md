@@ -77,21 +77,22 @@ fleetlogix/
 
 ## ⚙️ Tech Stack
 
-| Layer | Technology |
-|-------|-------------|
-| Frontend | React + Vite + CSS |
-| Backend | Django REST Framework |
-| Database | PostgreSQL |
-| Map API | OpenRouteService, Mapbox, or Leaflet |
-| Deployment | Vercel (frontend) + AWS (backend) |
-| Containerization | Docker + docker-compose |
-| Authentication | JWT or Django Rest Auth |
+| Layer            | Technology                           |
+| ---------------- | ------------------------------------ |
+| Frontend         | React + Vite + CSS                   |
+| Backend          | Django REST Framework                |
+| Database         | PostgreSQL                           |
+| Map API          | OpenRouteService, Mapbox, or Leaflet |
+| Deployment       | Vercel (frontend) + AWS (backend)    |
+| Containerization | Docker + docker-compose              |
+| Authentication   | JWT or Django Rest Auth              |
 
 ---
 
 ## 🚀 Setup Instructions
 
 ### 1. Backend (Django)
+
 ```bash
 cd backend
 python -m venv venv
@@ -103,6 +104,7 @@ python manage.py runserver
 ```
 
 ### 2. Frontend (React)
+
 ```bash
 cd frontend
 npm install
@@ -114,6 +116,7 @@ npm run dev
 ## 🧩 Environment Variables
 
 **Backend (.env):**
+
 ```
 SECRET_KEY=your-secret-key
 DEBUG=True
@@ -122,6 +125,7 @@ MAP_API_KEY=your-map-api-key
 ```
 
 **Frontend (.env):**
+
 ```
 VITE_API_URL=https://api.yourdomain.com
 VITE_MAP_API_KEY=your-map-api-key
@@ -132,12 +136,15 @@ VITE_MAP_API_KEY=your-map-api-key
 ## 🌍 Deployment
 
 ### Frontend (Vercel)
+
 1. Connect your GitHub repo to Vercel.
 2. Add environment variables under **Settings → Environment Variables**.
 3. Deploy directly from the `frontend/` directory.
 
 ### Backend (AWS)
+
 Options:
+
 - **Elastic Beanstalk**
 - **EC2 + Nginx + Gunicorn**
 - **Lambda + API Gateway**
@@ -150,16 +157,16 @@ docker-compose up --build
 
 ## 🧾 API Endpoints
 
-| Endpoint | Method | Description |
-|-----------|---------|-------------|
-| `/api/trips/plan/` | POST | Create a new trip |
-| `/api/trips/<id>/route/` | GET | Fetch route details |
-| `/api/trips/<id>/logsheet/` | GET | Generate log sheet |
-| `/api/users/login/` | POST | Authenticate user |
-| `/api/users/register/` | POST | Register user |
+| Endpoint                    | Method | Description         |
+| --------------------------- | ------ | ------------------- |
+| `/api/trips/plan/`          | POST   | Create a new trip   |
+| `/api/trips/<id>/route/`    | GET    | Fetch route details |
+| `/api/trips/<id>/logsheet/` | GET    | Generate log sheet  |
+| `/api/users/login/`         | POST   | Authenticate user   |
+| `/api/users/register/`      | POST   | Register user       |
 
 ---
 
 ## 📄 License
 
-MIT License © 2025 Hezborn Shikuku
+[MIT License © 2025 Hezborn Shikuku](LICENCE)
